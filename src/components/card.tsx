@@ -1,6 +1,6 @@
 import { ComponentProps } from "solid-js"
 
-export default function Card(props: { title: string, description: string }) {
+export default function Card(props: { title: string, description: string, id: number }) {
     return (
         <div class="col-span-1 p-3 bg-zinc-900/75 border border-zinc-800 rounded-xl">
             <h2 class="text-xl font-semibold">{props.title}</h2>
