@@ -3,8 +3,9 @@ import { render } from 'solid-js/web';
 import './index.css';
 import Home from './pages/Home';
 import About from './pages/About';
-import { Route, Router } from '@solidjs/router';
+import Product from './pages/Product';
 import NavBar from './components/nav-bar';
+import { Route, Router } from '@solidjs/router';
 
 const root = document.getElementById('root');
 
@@ -18,8 +19,9 @@ render(() =>
     <>
         <NavBar />
         <Router>
-            <Route path="/" component={ Home } />
-            <Route path="/about" component={ About } />
+            <Route path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/product/:id" component={Product} />
         </Router>
     </>
     , root!);

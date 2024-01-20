@@ -5,10 +5,10 @@ import Card from '../components/card'
 const Home: Component = () => {
 
     return (
-        <main class='grid grid-cols-3 m-20 gap-5'>
-            {products.map((product, index) => (
+        <main class='grid grid-cols-3 mt-10 mx-20 gap-5'>
+            {products.map((product) => (
                 <Card
-                    id={index}
+                    id={product.id  }
                     title={product.title}
                     description={product.description}
                 />
